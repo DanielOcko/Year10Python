@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <title>Pilot App</title>
+  </head>
+  <body>
+    <h1>Pilot App</h1>
+    <p>Hello, welcome to the Pilot App</p>
+    <p>Blogs:</p>
+    <ol>
+    {%for post in object_list%}
+    <li>{{post.title}}</li>
+    <p>{{post.topic}}</p>
+    <p>{{post.authorid}}</p>
+    <p>{{post.creationdate}}</p>
+    {%endfor%}
+    </ol>
+  </body>
+</html>
